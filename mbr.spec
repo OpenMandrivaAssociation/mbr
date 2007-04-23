@@ -1,12 +1,12 @@
 %define name mbr
-%define version 1.1.5
-%define release %mkrel 2
+%define version 1.1.9
+%define release %mkrel 1
 
 Summary: Master Boot Record for IBM-PC compatible computers
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}_%{version}.orig.tar.bz2
+Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: System/Kernel and hardware
 Url: http://packages.debian.org/unstable/admin/mbr
@@ -19,7 +19,7 @@ then transfers control to LILO, which transfers control to the Linux
 kernel.
 
 %prep
-%setup -q -n %{name}-%{version}.orig
+%setup -q
 
 %build
 %configure
