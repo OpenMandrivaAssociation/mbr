@@ -20,6 +20,7 @@ kernel.
 
 %prep
 %setup -q
+find -name Makefile.in | xargs -r perl -pi -e 's/\B-Werror\b//g'
 
 %build
 %configure
