@@ -23,7 +23,6 @@ kernel.
 %prep
 %setup -q
 %patch0 -p1
-find -name Makefile.in | xargs -r perl -pi -e 's/\B-Werror\b//g'
 
 %build
 %configure
