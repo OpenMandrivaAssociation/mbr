@@ -1,12 +1,13 @@
 %define name mbr
-%define version 1.1.9
+%define version 1.1.10
 %define release %mkrel 1
 
 Summary: Master Boot Record for IBM-PC compatible computers
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: %{name}_%{version}.orig.tar.gz
+Patch0: mbr_1.1.10-1.diff.gz
 License: GPL
 Group: System/Kernel and hardware
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -21,6 +22,7 @@ kernel.
 
 %prep
 %setup -q
+%patch0 -p1
 find -name Makefile.in | xargs -r perl -pi -e 's/\B-Werror\b//g'
 
 %build
