@@ -1,6 +1,6 @@
 %define name mbr
 %define version 1.1.10
-%define release %mkrel 1
+%define release %mkrel 3
 
 Summary: Master Boot Record for IBM-PC compatible computers
 Name: %{name}
