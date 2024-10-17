@@ -11,7 +11,7 @@ Patch0: mbr_1.1.10-1.diff.gz
 License: GPL
 Group: System/Kernel and hardware
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Url: http://packages.debian.org/unstable/admin/mbr
+Url: https://packages.debian.org/unstable/admin/mbr
 BuildRequires: dev86
 Exclusivearch: %ix86
 
