@@ -12,6 +12,11 @@ License: GPL
 Group: System/Kernel and hardware
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Url: https://packages.debian.org/unstable/admin/mbr
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: dev86
 Exclusivearch: %ix86
 
